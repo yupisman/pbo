@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size:12px;
+    margin: 0;
+}
+
+body {
+    font-family: 'Droid Sans', Arial, Sans;
+    line-height: 1.6rem;
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+button {
+    background-color: #fff;
+    border-radius: .5rem;
+    border: 1px solid #bbb;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: .5rem 1rem;
+}
+
+.wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.main.wrapper {
+    background-color: #fff;
+    border-radius:0 0 2rem 2rem;
+    box-shadow: 0 12px 36px rgba(0,0,0,.13);
+    position: relative;
+    padding-top: 3rem;
+    z-index: 1;
+}
+
+.task-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header.wrapper {
+    background: #ef3851;
+    color: #fff;
+    box-shadow: 0 2px 14px rgba(0,0,0,.43);
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    margin: 0;
+}
+
+.task-item {
+    padding: 1rem 1.4rem;
+    transition: all ease-in .1s;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    display: flex;
+    color: #6e6e6e;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 24px rgba(0,0,0,.22);
+    transition: all ease-out .2s;
+    color: #101010;
+}
+
+.task-item .content {
+    flex: 5;
+}
+
+.task-item .action {
+    flex: 1;
+    display: flex;
+}
+
+.action button {
+    flex: 1;
+    padding: 0 .5rem;
+    font-size: 1rem;
+}
+
+.action .primary {
+    border-radius: .5rem 0 0 .5rem;
+    background-color: #fff;
+    border-color: #1a7db3;
+    color: #1a7db3;
+}
+
+.action .secondary {
+    border-radius: 0 .5rem .5rem 0;
+    border-left: none;
+    background-color: #fff;
+    border-color: #e15a6d;
+    color: #e15a6d;
+}
+
+.action .primary:hover {
+    background-color: #1a7db3;
+    color: #fff;
+}
+
+.action .secondary:hover {
+    background-color: #e15a6d;
+    color: #fff;
+}
+
+.task-item.selesai {
+    color: #cecac9;
+}
+
+.task-item.selesai:hover {
+    box-shadow: none;
+}
+
+.message {
+    color: #231e1e;
+}
+
+.cf:after {
+    display: table;
+    content: '';
+    height: 0;
+    clear: both;
+}
+
+.create-form {
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.create-form form {
+    display: flex;
+}
+
+.create-form form input {
+    flex-grow: 4;
+    border-radius: .5rem 0 0 .5rem;
+    border: 1px solid #bbb;
+    border-right: none;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+}
+
+.create-form form button {
+    flex-grow: 1;
+    border-radius: 0 .5rem .5rem 0;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+}
+
+.create-form form button:hover {
+    background: #bbb;
+}
